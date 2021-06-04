@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8"/>
+    <script
+            src="https://kit.fontawesome.com/f96fc7db48.js"
+            crossorigin="anonymous"
+    ></script>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons"
+            rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body></body>
+
+<header class="header" id="home">
+    <div class="u-centered">
+        <div class="call-to-action">
+            <h1 class="call-to-action__title">Welcome To My Website</h1>
+            <p class="call-to-action__description">My name is Piyansh</p>
+            <button class="call-to-action__button" onClick="document.getElementById('contact').scrollIntoView();">Contact Me</button>
+        </div>
+    </div>
+</header>
+
+<div class="bar">
+    <div class="bar__content u-centered">
+        <p class="bar__logo" id="bar__logo">Piyansh Kumar</p>
+        <input type="checkbox" id="inpNavToggle"/>
+        <label class="bar__nav-toggle" for="inpNavToggle">
+            <i class="material-icons">menu</i>
+        </label>
+        <nav class="nav">
+            <a class="nav__link" onClick="document.getElementById('home').scrollIntoView();"> Home </a>
+            <a class="nav__link" onClick="document.getElementById('aboutme').scrollIntoView();"> About Me </a>
+            <a class="nav__link" onClick="document.getElementById('skills').scrollIntoView();"> Skills </a>
+            <a class="nav__link" onClick="document.getElementById('Projects').scrollIntoView();"> Projects </a>
+            <a class="nav__link" onClick="document.getElementById('contact').scrollIntoView();"> Contact </a>
+        </nav>
+    </div>
+</div>
+
+<div class="section__break"></div>
+
+<main class="Aboutme" id="aboutme">
+    <div class="container__blue">
+        <h1 class="section__title">About Me</h1>
+        <p class="section__description">
+            I am a high school student at
+            <span
+            ><a href="https://mcroberts.sd38.bc.ca/" class="highschool__link"
+            >Hugh Mcroberts</a
+            ></span
+            >
+        </p>
+        <div class="social">
+            <a href="https://github.com/PiyanshK"
+            ><i class="fab fa-github fa-4x github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/piyansh-kumar-8b907a1ba/"
+            ><i class="fab fa-linkedin fa-4x linkedin"></i
+            ></a>
+            <a href="https://twitter.com/PiyanshK"
+            ><i class="fab fa-twitter fa-4x twitter"></i
+            ></a>
+        </div>
+    </div>
+</main>
+
+<div class="section__break"></div>
+
+<div class="skills" id="skills">
+    <div class="container__red">
+        <h1 class="section__title">My Skills</h1>
+    </div>
+    <div class="container__green">
+        <div class="myskills">
+            <p class="skill__title">Python</p>
+            <div class="skill__bar">
+                <div class="skill__python"></div>
+                <div class="python__hidendata">Python : 60%</div>
+            </div>
+            <p class="skill__title">Java</p>
+            <div class="skill__bar">
+                <div class="skill__java"></div>
+                <div class="java__hidendata">Java : 50%</div>
+            </div>
+            <p class="skill__title">Web Development</p>
+            <div class="skill__bar">
+                <div class="skill__web"></div>
+                <div class="web__hidendata">HTML, CSS, JavaScript: 40%</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section__break"></div>
+
+<div class="Projects" id="Projects">
+    <div class="container__neon"><h1 class="section__title">Projects</h1></div>
+    <div class="myprojects">
+        <div class="memorygame">
+            <div class="container__neonproject">
+                <h1 class="project__title">Game</h1>
+                <p class="project__description">Memory Game using Pygame</p>
+                <a href="https://github.com/PiyanshK/MemoryGame"><i
+                        class="fab fa-github fa-4x github project__link"></i></a>
+            </div>
+        </div>
+        <div class="website">
+            <div class="container__neonproject">
+                <h1 class="project__title">Website</h1>
+                <p class="project__description">The Website you are viewing right now</p>
+                <a href="#"><i class="fas fa-link fa-4x project__link link"></i></a>
+            </div>
+        </div>
+        <div class="alarm">
+            <div class="container__neonproject">
+                <h1 class="project__title">Alarm</h1>
+                <p class="project__description">Alarm Clock Using Java</p>
+                <a href="https://github.com/PiyanshK/Alarm"><i class="fab fa-github fa-4x github project__link"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section__break"></div>
+
+<div class="contact" id="contact">
+    <div class="container__neoncontact">
+        <div class="section__title">
+            <h1 class="section__title">Contact</h1>
+        </div>
+    </div>
+    <div class="container__neoncontact">
+        <div class="contact__form">
+            <form id="contact__form" method="post" action="https://formspree.io/f/meqvgpee">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                <input name="email" type="text" class="form-control" placeholder="Your Email" required><br>
+                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                <input type="submit" class="form-control-submit form-control" value="Send Message"><br>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</html>
