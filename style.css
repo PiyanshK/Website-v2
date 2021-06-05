@@ -158,28 +158,6 @@ body {
     text-decoration: none;
 }
 
-@media screen and (min-width: 767px) {
-    .bar__nav-toggle {
-        display: none;
-    }
-
-    .nav {
-        display: initial;
-        position: static;
-        width: unset;
-        height: unset;
-        padding: unset;
-        background: transparent;
-    }
-
-    .nav__link {
-        border-top: none;
-    }
-
-    .nav__link:not(:last-of-type) {
-        margin-right: 24px;
-    }
-}
 
 .section__break {
     border-top: 5px solid #bc13fe;
@@ -315,9 +293,9 @@ body {
 }
 
 .section__description {
-    margin-top: 4em;
+    margin-top: 4vh;
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: 5vh;
     font-family: "Fira Sans", sans-serif;
     font-weight: 800;
     font-size: 30px;
@@ -562,4 +540,58 @@ form{
 
 .form-control-submit{
     background: linear-gradient(to bottom right, rgb(60, 255, 0), #ff0000);
+}
+
+
+@media only screen and (min-width: 767px) {
+
+
+    .bar__nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: initial;
+        position: static;
+        width: unset;
+        height: unset;
+        padding: unset;
+        background: transparent;
+    }
+
+    .nav__link {
+        border-top: none;
+    }
+
+    .nav__link:not(:last-of-type) {
+        margin-right: 24px;
+    }
+
+}
+
+@media only screen and (max-height: 767px){
+    .container__blue{
+        padding: 0;
+        margin: 0;
+        margin-left: 30vw;
+        margin-top: 5vh;
+    }
+
+    .skill__bar:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .project__title{
+        font-size: 25px;
+    }
+
+    .container__neonproject{
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    .container__neonproject:hover{
+        box-shadow: none;
+    }
+
 }
