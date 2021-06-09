@@ -568,6 +568,9 @@ form{
     }
 
 }
+/* 
+
+To Implement Mobile Response
 
 @media only screen and (max-height: 767px){
     .container__blue{
@@ -595,3 +598,5 @@ form{
     }
 
 }
+
+*/
